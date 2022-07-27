@@ -1,0 +1,33 @@
+.likeAndCom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 3px 10px 3px 10px;
+    background-color: #ffd7d7;
+
+    .nbLike {
+        display: flex;
+        gap: 10px;
+        width: 50%;
+
+        svg {
+
+            color: #FD2D01;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .com {
+        display: flex;
+        gap: 10px;
+        width: 50%;
+        justify-content: flex-end;
+        font-size: 12px;
+    }
+}

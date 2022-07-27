@@ -1,0 +1,61 @@
+
+        .button-likeAndCom {
+            display: flex;
+            width: 100%;
+            padding: 10px;
+            gap: 5px;
+
+            .button-like {
+                width: 50%;
+
+                .like {
+                    width: 100%;
+                    border: none;
+                    border-radius: 16px;
+                    margin: 5px;
+                    padding: 5px;
+                    background-color: rgba($color: #4E5166, $alpha: 0.3);
+                    cursor: pointer;
+
+                    span {
+                        clip: rect(0 0 0 0);
+                        height: auto;
+                        overflow: hidden;
+                        position: absolute;
+                        width: 1px;
+                        white-space: nowrap;
+                    }
+                }
+
+                .like-active {
+                    background-color: green;
+                }
+
+                .dislike-active {
+                    background-color: red;
+                }
+            }
+
+            .button-com {
+                width: 50%;
+                border: none;
+                background-color: rgba($color: #4E5166, $alpha: 0.3);
+                border-radius: 16px;
+                margin: 5px;
+                padding: 5px;
+                cursor: pointer;
+
+                span {
+                    clip: rect(0 0 0 0);
+                    height: auto;
+                    overflow: hidden;
+                    position: absolute;
+                    width: 1px;
+                    white-space: nowrap;
+                }
+            }
+
+            .active {
+                background-color: rgba($color: #4E5166, $alpha: 0.7);
+            }
+        }

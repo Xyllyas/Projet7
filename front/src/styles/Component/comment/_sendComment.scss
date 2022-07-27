@@ -1,0 +1,50 @@
+.form-comment {
+    width: 100%;
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .container-text{
+            width: calc(80% + 20px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            textarea {
+                width: calc(100% - 20px);
+                border-radius: 16px;
+                resize: none;
+                padding: 10px;
+            }
+    
+            .textarea-error {
+                background-color: ivory;
+                border: none;
+                outline: 2px solid red;
+                border-radius: 5px;            
+                animation: invalidInput 0.6s ease;
+            }
+        }
+
+        button {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background-color: transparent;
+            border-radius: 50%;
+            font-size: 25px;
+            cursor: pointer;
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+}

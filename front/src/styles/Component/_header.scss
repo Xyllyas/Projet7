@@ -1,0 +1,59 @@
+header{
+    padding-top: 5px;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    margin-bottom: 15px;
+    background-color: #fff;
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            cursor: pointer;
+            width:240px;
+            height: 50px;
+        }
+    }
+        
+        .button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            
+            
+            button{
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                border: none;
+                background-color: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                font-size: 12px;
+                svg{
+                    font-size: 25px;
+                }
+                span{clip: rect(0 0 0 0);
+                height: auto;
+                overflow: hidden;
+                position: absolute;
+                width: 1px;
+                white-space: nowrap;
+                }
+            }
+        }
+}
+.sticky{
+    position:sticky;
+    top: 0;
+    left: 0;
+}

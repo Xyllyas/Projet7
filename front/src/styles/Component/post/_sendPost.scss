@@ -1,0 +1,92 @@
+.form-post {
+    width: 80%;
+    max-width: 750px;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: rgba($color: #4E5166, $alpha: 1.0);
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+
+        .form-content {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 5px;
+
+            .text {
+                padding: 5px;
+                width: 100%;
+                resize: none;
+                background-color: rgba(236, 236, 236, 1);
+                border: none;
+                border-radius: 12px;
+                vertical-align: middle;
+            }
+
+            .text:focus-visible {
+                outline: none !important;
+            }
+            .file{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+                border-radius: 8px;
+                .label-file {
+                    width: 70px;
+                    height: 30px;
+                    padding: 5px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                }
+                hr {
+                    width: 1px;
+                    height: 30px;
+                    border: none;
+                    border-right: 3px solid #4E5166;
+                    overflow: visible;
+                }
+                #file {
+                    clip: rect(0 0 0 0);
+                    height: auto;
+                    overflow: hidden;
+                    position: absolute;
+                    width: 1px;
+                    white-space: nowrap;
+                }
+                span{
+                    height: 30px;
+                    padding: 5px;
+                }
+            }
+
+        }
+
+        button {
+            width: 35px;
+            height: 35px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            span{
+                clip: rect(0 0 0 0);
+                height: auto;
+                overflow: hidden;
+                position: absolute;
+                width: 1px;
+                white-space: nowrap;
+            }
+        }
+
+    }
+
+}

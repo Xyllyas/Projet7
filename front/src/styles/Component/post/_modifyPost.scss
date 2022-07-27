@@ -1,0 +1,212 @@
+.modify-post {
+
+    .wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+
+        .wrapper-fixed {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+
+            .wrapper-modify-post {
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                .modify-post-container {
+                    position: absolute;
+
+                    width: 100%;
+                    height: 100%;
+
+
+                    background-color: rgba($color: #000000, $alpha: 0.7);
+
+                    .wrapper-content {
+                        width: 100%;
+                        position: relative;
+                        height: 100%;
+
+
+
+                        #modify-post-content {
+                            position: fixed;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 300px;
+                            height: 170px;
+                            border-radius: 16px;
+                            background-color: #4E5166;
+
+                            .title {
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 20px;
+                                width: 100%;
+                                color: #fff;
+
+                                p {
+                                    font-size: 20px;
+                                    font-weight: 800;
+                                }
+
+                            }
+
+                            .close-btn {
+                                position: absolute;
+                                top: 10px;
+                                right: 10px;
+                                width: 30px;
+                                height: 30px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 8px;
+                                background-color: #fff;
+
+                                button {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+                                    border: none;
+
+                                    svg {
+                                        font-size: 20px;
+                                    }
+
+                                    span {
+                                        clip: rect(0 0 0 0);
+                                        height: auto;
+                                        overflow: hidden;
+                                        position: absolute;
+                                        width: 1px;
+                                        white-space: nowrap;
+                                    }
+                                }
+
+                            }
+
+                            .form-post-modify {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                border-radius: 12px;
+                                padding: 10px;
+                                background-color: rgba($color: #4E5166, $alpha: 1.0);
+
+                                form {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 10px;
+                                    width: 100%;
+
+                                    .form-content-modify {
+                                        width: 90%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        gap: 5px;
+
+                                        .text {
+                                            padding: 5px;
+                                            width: 100%;
+                                            resize: none;
+                                            background-color: rgba(236, 236, 236, 1);
+                                            border: none;
+                                            border-radius: 12px;
+                                            vertical-align: middle;
+                                        }
+
+                                        .text:focus-visible {
+                                            outline: none !important;
+                                        }
+
+                                        .file {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            border-radius: 8px;
+                                            background-color: #fff;
+
+                                            .label-file {
+                                                width: 70px;
+                                                height: 30px;
+                                                padding: 5px;
+                                                cursor: pointer;
+                                            }
+
+                                            hr {
+                                                width: 1px;
+                                                height: 30px;
+                                                border: none;
+                                                border-right: 3px solid #4E5166;
+                                                overflow: visible;
+                                            }
+
+                                            #file-modify {
+                                                clip: rect(0 0 0 0);
+                                                height: auto;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                width: 1px;
+                                                white-space: nowrap;
+                                            }
+
+                                            span {
+                                                height: 30px;
+                                                padding: 5px;
+                                            }
+
+                                        }
+                                    }
+
+                                    .button {
+
+                                        button {
+                                            cursor: pointer;
+                                            width: 35px;
+                                            height: 35px;
+                                            border: none;
+                                            border-radius: 8px;
+
+                                            svg {
+                                                font-size: 20px;
+                                            }
+
+                                            span {
+                                                clip: rect(0 0 0 0);
+                                                height: auto;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                width: 1px;
+                                                white-space: nowrap;
+                                            }
+                                        }
+                                    }
+
+                                }
+
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

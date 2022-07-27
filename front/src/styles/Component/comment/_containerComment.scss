@@ -1,0 +1,100 @@
+.wrapper-wrapper-container-comment {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .wrapper-container-comment {
+        width: 100%;
+
+        .setup-container-comment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            .container-comment {
+                display: flex;
+                flex-direction: row;
+                width: calc(100% - 20px);
+                gap: 10px;
+                border-radius: 16px;
+                background-color: #FFD7D7;
+                justify-content: space-around;
+                padding: 5px;
+                list-style: none;
+                color: rgba($color: #000, $alpha: 1);
+
+                button {
+                    cursor: pointer;
+                    width: 30px;
+                    height: 30px;
+                    border: none;
+                    border-radius: 8px;
+                }
+
+                .comment {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    padding: 5px;
+
+
+                    h3 {
+                        align-self: flex-start;
+                        font-size: 12px;
+                        font-weight: 800;
+                        padding-bottom: 3px;
+                    }
+
+                    p {
+                        min-width: 200px;
+                        width: 100%;
+                        min-height: 42px;
+                        border-radius: 8px;
+                        padding: 5px;
+                        font-size: 13px;
+                        background-color: #fff;
+                        overflow-wrap: anywhere;
+                    }
+
+                    textarea {
+                        width: 90%;
+                        border: 1px solid #4E5166;
+                        padding: 5px;
+                        border-radius: 8px;
+                        resize: none;
+                    }
+
+                    textarea:focus-visible {
+                        outline: none !important;
+                    }
+                }
+
+                .button {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    margin-right: 5px;
+
+                    button {
+                        width: 30px;
+                        height: 30px;
+                        border: none;
+                        border-radius: 8px;
+
+                        span {
+                            clip: rect(0 0 0 0);
+                            height: auto;
+                            overflow: hidden;
+                            position: absolute;
+                            width: 1px;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
